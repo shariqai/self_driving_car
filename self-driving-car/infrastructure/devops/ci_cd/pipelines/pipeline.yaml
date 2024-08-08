@@ -1,0 +1,5 @@
+# CI/CD pipeline configuration
+stages:
+  - build
+  - test
+  - deploy

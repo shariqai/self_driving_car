@@ -1,0 +1,15 @@
+# CI/CD configurations
+build:
+  stage: build
+  script:
+    - echo "Building the project"
+
+test:
+  stage: test
+  script:
+    - echo "Running tests"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploying the project"

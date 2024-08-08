@@ -1,0 +1,17 @@
+# Ansible playbook
+- name: Deploy self-driving car application
+  hosts: all
+  tasks:
+    - name: Ensure Python is installed
+      apt:
+        name: python3
+        state: present
+
+    - name: Clone repository
+      git:
+        repo: 'https://github.com/yourusername/self-driving-car.git'
+        dest: /opt/self-driving-car
+
+    - name: Install requirements
+      pip:
+        requirements: /opt/self-driving-car/requirements.txt

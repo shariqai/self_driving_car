@@ -1,0 +1,17 @@
+# Helm chart configuration
+apiVersion: v2
+name: self-driving-car
+description: A Helm chart for Kubernetes
+
+maintainers:
+  - name: Your Name
+    email: your.email@example.com
+
+version: 1.0.0
+
+appVersion: 1.0.0
+
+dependencies:
+  - name: redis
+    version: 6.2.1
+    repository: https://charts.bitnami.com/bitnami

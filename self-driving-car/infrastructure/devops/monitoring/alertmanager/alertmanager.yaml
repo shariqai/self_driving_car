@@ -1,0 +1,12 @@
+# Alertmanager configuration
+global:
+  resolve_timeout: 5m
+
+route:
+  receiver: 'team-X-mails'
+  group_by: ['alertname', 'job']
+
+receivers:
+  - name: 'team-X-mails'
+    email_configs:
+    - to: 'team@example.com'

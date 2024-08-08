@@ -1,0 +1,4 @@
+# Cache service configuration
+cache:
+  host: localhost
+  port: 6379

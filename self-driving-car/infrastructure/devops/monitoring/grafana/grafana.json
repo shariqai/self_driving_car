@@ -1,0 +1,11 @@
+# Grafana dashboard configuration
+{
+  "dashboard": {
+    "id": null,
+    "title": "Self-Driving Car Dashboard",
+    "tags": [],
+    "timezone": "browser",
+    "schemaVersion": 22,
+    "version": 1
+  }
+}

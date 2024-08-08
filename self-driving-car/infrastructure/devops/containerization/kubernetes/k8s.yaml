@@ -1,0 +1,20 @@
+# Kubernetes configuration
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: self-driving-car
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: self-driving-car
+  template:
+    metadata:
+      labels:
+        app: self-driving-car
+    spec:
+      containers:
+      - name: self-driving-car
+        image: self-driving-car:latest
+        ports:
+        - containerPort: 8080
